@@ -1,11 +1,12 @@
 import { Box } from "@mui/material";
 import About from "./About";
+import ProjectCard from "./ProjectCard";
 
 const RightSide = () => {
   return (
     <Box
       sx={{
-        width: "50%",
+        width: { xs: "100%", md: "50%" },
       }}
     >
       <About />
@@ -13,9 +14,10 @@ const RightSide = () => {
         id="projects"
         sx={{
           height: "100vh",
+          padding: "1rem",
         }}
       >
-        Projects
+        <ProjectCard />
       </Box>
     </Box>
   );

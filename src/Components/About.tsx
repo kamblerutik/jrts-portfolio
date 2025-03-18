@@ -5,14 +5,18 @@ const About = () => {
     <Box
       id="about"
       sx={{
-        height: "100vh",
+        height: { xs: "fit", md: "100vh" },
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
         padding: "1rem",
       }}
     >
-      <Typography variant="h6">
+      <Typography
+        sx={{
+          fontSize: { xs: "1rem", md: "1.5rem" },
+        }}
+      >
         I'm a developer passionate about creating accessible, pixel-perfect user
         interfaces that combine thoughtful design with robust engineering. My
         favorite work lies at the intersection of design and development,

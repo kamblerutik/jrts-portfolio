@@ -56,6 +56,7 @@ const LeftSide = () => {
           style={{
             color: active === "about" ? "#fff" : "",
             cursor: "pointer",
+            fontSize: "1.5rem",
           }}
         >
           About
@@ -67,6 +68,7 @@ const LeftSide = () => {
           style={{
             color: active === "experience" ? "#fff" : "",
             cursor: "pointer",
+            fontSize: "1.5rem",
           }}
         >
           Experience
@@ -78,6 +80,7 @@ const LeftSide = () => {
           style={{
             color: active === "projects" ? "#fff" : "",
             cursor: "pointer",
+            fontSize: "1.5rem",
           }}
         >
           Projects
