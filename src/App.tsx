@@ -1,12 +1,13 @@
 import { Box, Typography } from "@mui/material";
-import LeftSide from "./Components/LeftSide";
-import RightSide from "./Components/RightSide";
+import { useState } from "react";
 import { Link } from "react-scroll";
 import { Typewriter } from "react-simple-typewriter";
-import { useState } from "react";
+import "./App.css";
+import LeftSide from "./Components/LeftSide";
+import RightSide from "./Components/RightSide";
 
 const App = () => {
-  const [active, setActive] = useState("");
+  const [active, setActive] = useState("about");
   return (
     <Box
       sx={{
@@ -16,6 +17,7 @@ const App = () => {
         flexDirection: { xs: "column", md: "row" },
       }}
     >
+      <div className="blur" />
       <Box
         sx={{
           width: "50%",
